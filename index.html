@@ -25,8 +25,8 @@
 
     <div id="app" class="container py-5">
         
-        <div v-for="currentEmail in mails">
-            <p>{{ currentEmail }}</p>
+        <div v-if="mails.length > 9">
+            <p v-for="currentEmail in mails">{{ currentEmail }}</p>
         </div>
 
     </div>
