@@ -2,7 +2,7 @@
 <html lang="it">
 <head>
     <meta charset="UTF-8">
-    <title></title>
+    <title>Mail List</title>
     
     <!-- for media query -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -18,12 +18,16 @@
 </head>
 <body>
 
-    <!-- VUE 3 -->
-    <script src="https://unpkg.com/vue@3"></script>
+    <!-- vue -->
+    <script src='https://unpkg.com/vue@3/dist/vue.global.js'></script>
+    <!-- axios -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.20.0/axios.min.js"></script>
 
     <div id="app" class="container py-5">
         
-
+        <div v-for="currentEmail in mails">
+            <p>{{ currentEmail }}</p>
+        </div>
 
     </div>
 
