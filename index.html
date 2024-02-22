@@ -24,10 +24,16 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.20.0/axios.min.js"></script>
 
     <div id="app" class="container py-5">
+
+        <section >
+            <h1>TEMP MAIL</h1>
+
+            <div v-if="mails.length > 9">
+                <p v-for="currentEmail in mails">{{ currentEmail }}</p>
+            </div>
+
+        </section>
         
-        <div v-if="mails.length > 9">
-            <p v-for="currentEmail in mails">{{ currentEmail }}</p>
-        </div>
 
     </div>
 
